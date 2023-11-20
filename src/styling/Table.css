@@ -1,0 +1,62 @@
+/* components/AvailabilityTable.css */
+
+.table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+/* Add this to your CSS file or define in-line styles */
+.full-slot {
+    background-color: darkred; /* Adjust styling as needed */
+  }
+  
+  .unavailable-slot {
+    /* Add styling for 'UNAVAILABLE' slots if needed */
+    background-color: lightgrey;
+  }
+  
+  .available-slot {
+    /* Add styling for 'Available' slots if needed */
+  }
+
+  .clickable-cell {
+    cursor: pointer;
+  }
+  .selected-slot {
+    background-color: green; /* Add your desired background color */
+  }
+  
+  .hours-column {
+    cursor: default; /* Change cursor for the hours column */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    th, td {
+      font-size: 12px;
+    }
+  }
+  
